@@ -3,7 +3,7 @@
     "displayName": "pad-your-args",
     "publisher": "benjaminporter",
     "description": "A vscode extension that will highlight unpadded parentheses in Lua.",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.45.0"
     },
@@ -11,10 +11,14 @@
         "Programming Languages"
     ],
     "contributes": {
-        "grammars": [{
-            "scopeName": "pad-your-args.injection",
-            "injectTo": ["source.lua"],
-            "path": "./syntaxes/lua.tmLanguage.json"
-        }]
+        "grammars": [
+            {
+                "scopeName": "pad-your-args.injection",
+                "injectTo": [
+                    "source.lua"
+                ],
+                "path": "./syntaxes/lua.tmLanguage.json"
+            }
+        ]
     }
 }
