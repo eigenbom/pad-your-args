@@ -1,0 +1,19 @@
+{
+    "name": "pad-your-args",
+    "displayName": "pad-your-args",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "grammars": [{
+            "scopeName": "pad-your-args.injection",
+            "injectTo": ["source.lua"],
+            "path": "./syntaxes/lua.tmLanguage.json"
+        }]
+    }
+}

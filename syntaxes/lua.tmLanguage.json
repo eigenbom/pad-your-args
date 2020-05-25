@@ -1,0 +1,22 @@
+{
+	"scopeName": "pad-your-args.injection",
+	"injectionSelector": "L:source.lua",
+	"patterns": [
+		{
+			"match": "function\\s*(?:\\s*(\\S*(?:([\\.:])\\S*)?)\\s*)?\\(\\S.*\\)",
+			"name": "invalid.illegal.unpadded-function-parens-right.lua"
+		},
+		{
+			"match": "function\\s*(?:\\s*(\\S*(?:([\\.:])\\S*)?)\\s*)?\\(.*\\S\\)",
+			"name": "invalid.illegal.unpadded-function-parens-right.lua"
+		},
+		{
+			"match": "\\(\\S.*\\)",
+			"name": "invalid.illegal.unpadded-parens-left.lua"
+		},
+		{
+			"match": "\\(.*\\S\\)",
+			"name": "invalid.illegal.unpadded-parens-right.lua"
+		}
+	]
+}
