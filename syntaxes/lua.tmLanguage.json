@@ -3,19 +3,19 @@
 	"injectionSelector": "L:source.lua",
 	"patterns": [
 		{
-			"match": "function\\s*(?:\\s*(\\S*(?:([\\.:])\\S*)?)\\s*)?\\(\\S.*\\)",
+			"match": "function\\s*(?:\\s*(\\S*(?:([\\.:])\\S*)?)\\s*)?\\([(a-zA-Z0-9_].*\\)",
+			"name": "invalid.illegal.unpadded-function-parens-left.lua"
+        },
+        {
+			"match": "function\\s*(?:\\s*(\\S*(?:([\\.:])\\S*)?)\\s*)?\\(.*[)a-zA-Z0-9_]\\)",
 			"name": "invalid.illegal.unpadded-function-parens-right.lua"
 		},
 		{
-			"match": "function\\s*(?:\\s*(\\S*(?:([\\.:])\\S*)?)\\s*)?\\(.*\\S\\)",
-			"name": "invalid.illegal.unpadded-function-parens-right.lua"
-		},
-		{
-			"match": "\\(\\S.*\\)",
+			"match": "\\([(a-zA-Z0-9_].*\\)",
 			"name": "invalid.illegal.unpadded-parens-left.lua"
 		},
 		{
-			"match": "\\(.*\\S\\)",
+			"match": "\\(.*[)a-zA-Z0-9_]\\)",
 			"name": "invalid.illegal.unpadded-parens-right.lua"
 		}
 	]
