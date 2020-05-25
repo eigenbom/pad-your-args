@@ -1,7 +1,8 @@
 {
     "name": "pad-your-args",
     "displayName": "pad-your-args",
-    "description": "",
+    "publisher": "benjaminporter",
+    "description": "A vscode extension that will highlight unpadded parentheses in Lua.",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.45.0"
