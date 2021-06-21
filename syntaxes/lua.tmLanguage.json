@@ -1,6 +1,6 @@
 {
 	"scopeName": "pad-your-args.injection",
-	"injectionSelector": "L:source.lua",
+	"injectionSelector": "L:source.lua -comment.line.double-dash.lua -comment.block.lua -string.quoted.double.lua -string.quoted.single.lua",
 	"patterns": [
 		{
 			"match": "function\\s*(?:\\s*(\\S*(?:([\\.:])\\S*)?)\\s*)?\\([({\"'a-zA-Z0-9_].*\\)",
